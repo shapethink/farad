@@ -2,7 +2,7 @@ Process = require "child_process"
 git = (argv...) ->
 	console.log "git", argv
 	new Promise (send, reject) ->
-		Process.spawn "git", argv
+		Process.spawn "git", argv, stdio:"inherit"
 			.on "exit", (code, signal) ->
 				if code is 0 then send code
 				else reject new Error "git #{arguments} failed: #{code ? signal}"
