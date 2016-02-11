@@ -8,7 +8,7 @@ git = (argv...) ->
 				else reject new Error "git #{arguments} failed: #{code ? signal}"
 
 fs = require "fs"
-writeStubTest = (path) -> ->
+writeStubTest = (path, name) ->
 	console.log "write stub test"
 	new Promise (send, reject) ->
 		fs.writeFile "#{path}/test.js", """
@@ -34,7 +34,7 @@ watcher
 		console.log "Found new module: #{name}"
 
 		git "checkout", "-b", "next"
-			.then writeStubTest(path)
+			.then writeStubTest path, name
 			.then git "add", path
 			.then git "commit", "-am", "autocommit"
 			.then git "stash"
