@@ -46,6 +46,3 @@ watcher
 			.then git "checkout", "develop"
 			.then git "merge", branch
 			.then -> console.log "done!"
-			.catch (rejected) ->
-				console.log rejected
-				throw rejected
