@@ -21,7 +21,7 @@ writeStubTest = (path, name) ->
 			if err then reject err else send()
 
 chokidar = require "chokidar"
-watcher = chokidar.watch "modules",
+watcher = chokidar.watch process.env.NODE_DIR,
 	persistent: true
 	ignoreInitial: true
 
