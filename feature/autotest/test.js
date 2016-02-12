@@ -1,7 +1,7 @@
 module.exports = {
 	"autotest": {
-		"should have some tests": function() {
-			throw new Error("but it doesn't");
+		"should have tests": function(){
+			throw new Error("but it has none");
 		}
 	}
 }
