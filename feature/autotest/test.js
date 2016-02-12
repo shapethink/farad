@@ -1,5 +1,7 @@
 module.exports = {
-	"#{name}": {
-		"needs some tests": {}
+	"autotest": {
+		"should have some tests": function() {
+			throw new Error("but it doesn't");
+		}
 	}
 }
