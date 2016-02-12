@@ -1,9 +1,10 @@
 {
   "name": "farad",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha "
+    "start": "coffee feature/automated-commit/server.coffee",
+    "test": "mocha --opts feature/automated-test/mocha.opts"
   },
   "repository": {
     "type": "git",
