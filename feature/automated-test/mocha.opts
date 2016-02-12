@@ -1,0 +1,4 @@
+--ui exports
+--recursive
+--compilers coffee:coffee-script/register
+feature/**/test{,.coffee,.js}
