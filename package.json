@@ -1,0 +1,23 @@
+{
+  "name": "farad",
+  "version": "0.0.0",
+  "description": "a game about capacity",
+  "main": "index.js",
+  "scripts": {
+    "test": "false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/threadmetal/farad.git"
+  },
+  "keywords": [
+    "experimental",
+    "game"
+  ],
+  "author": "Robert M. Koch <threadmetal@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/threadmetal/farad/issues"
+  },
+  "homepage": "https://github.com/threadmetal/farad#readme"
+}
