@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'test' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose stack Error: EISDIR: illegal operation on a directory, read
+4 verbose stack     at Error (native)
+5 verbose cwd /home/threadmetal/workspace/node_modules/farad-origin/feature/automated-test
+6 error Linux 3.19.0-49-generic
+7 error argv "/usr/bin/nodejs" "/usr/bin/npm" "test"
+8 error node v5.6.0
+9 error npm  v3.6.0
+10 error code EISDIR
+11 error errno -21
+12 error syscall read
+13 error eisdir EISDIR: illegal operation on a directory, read
+14 error eisdir This is most likely not a problem with npm itself
+14 error eisdir and is related to npm not being able to find a package.json in
+14 error eisdir a package you are trying to install.
+15 verbose exit [ -21, true ]
